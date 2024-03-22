@@ -26,3 +26,23 @@ Along with these SUBPROJECTS we also have some minimally working examples that u
 * [mwe physics world with character](https://github.com/opengl-toolbox/mwe_physics_world_with_character) - demonstrates a 3d world with a character that can be controlled with mouse and keyboard (Jolt Physics)
 
 
+# Creating New Subprojects
+Use this as a `readme.md` template to let people know what external libraries the subproject depeds on and how to set up the cmake file: 
+
+````
+[YOUR DESCRIPTION OF SUBPROJECT]
+
+add this to your cmake file 
+
+```
+...
+
+include_directories(TODO_FILL_IN)
+add_subdirectory(TODO_FILL_IN)
+
+... 
+
+target_link_libraries(your_project_name ... TODO_FILL_IN)
+```
+````
+
