@@ -30,9 +30,16 @@ Along with these SUBPROJECTS we also have some minimally working examples that u
 Use this as a `readme.md` template to let people know what external libraries the subproject depeds on and how to set up the cmake file: 
 
 ````
-[YOUR DESCRIPTION OF SUBPROJECT]
 
-add this to your cmake file 
+# Info
+
+...
+
+# Depdendencies
+
+...
+
+# CMake
 
 ```
 ...
