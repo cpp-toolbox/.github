@@ -10,14 +10,32 @@ The purpose of this organization is as follows:
 
 Anyone is welcome to contribute
 
-# Information
+# Sub Projects
 Anything denoted by SUBPROJECT is a repository of files, which probably will not work on it's own, but is to be used in a larger application, so far we have the following:
+
+### Interaction
 * [window](https://github.com/opengl-toolbox/window)
 * [mouse](https://github.com/opengl-toolbox/mouse)
 * [camera](https://github.com/opengl-toolbox/camera)
+* [physics](https://github.com/opengl-toolbox/physics)
+
+### Graphics
+* [glad3.3](https://github.com/opengl-toolbox/glad_opengl_3.3_core)
+* [render primitives](https://github.com/opengl-toolbox/render_primitives)
+* [shaders](https://github.com/opengl-toolbox/shaders)
 * [shader pipeline](https://github.com/opengl-toolbox/shader_pipeline)
 * [model loading](https://github.com/opengl-toolbox/model_loading)
+* [font rendering](https://github.com/opengl-toolbox/font_rendering)
 
+### Sound
+* [sound system](https://github.com/opengl-toolbox/sound_system)
+
+
+### Code
+* [math](https://github.com/opengl-toolbox/math)
+* [game loop](https://github.com/opengl-toolbox/game_loop)
+
+# Minimal Working Examples
 Along with these SUBPROJECTS we also have some minimally working examples that use the subprojects:
 * [mwe glfw](https://github.com/opengl-toolbox/mwe_glfw) - glfw window using opengl
 * [mwe shader pipeline](https://github.com/opengl-toolbox/mwe_shader_pipeline) - exmaple usage on how to use the shader pipeline
