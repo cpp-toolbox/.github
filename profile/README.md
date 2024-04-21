@@ -31,9 +31,10 @@ Anything denoted by SUBPROJECT is a repository of files, which probably will not
 * [sound system](https://github.com/opengl-toolbox/sound_system)
 
 
-### Code
+### Misc.
 * [math](https://github.com/opengl-toolbox/math)
 * [game loop](https://github.com/opengl-toolbox/game_loop)
+* [organizational tools](https://github.com/opengl-toolbox/organizational_tools)
 
 # Minimal Working Examples
 Along with these SUBPROJECTS we also have some minimally working examples that use the subprojects:
@@ -43,6 +44,7 @@ Along with these SUBPROJECTS we also have some minimally working examples that u
 * [mwe font rendering](https://github.com/opengl-toolbox/mwe_font_rendering) - demonstrates font rendering with freetype fonts
 * [mwe physics world with character](https://github.com/opengl-toolbox/mwe_physics_world_with_character) - demonstrates a 3d world with a character that can be controlled with mouse and keyboard (Jolt Physics)
 * [mwe sound world with character](https://github.com/opengl-toolbox/mwe_sound_world_with_character) - demonstrates a 3d world with positional sound with a character which can be controleld with mouse and keyboard (openal)
+* [mwe networking](https://github.com/opengl-toolbox/mwe_networking) - basic network setup with enet
 
 
 # Creating New Subprojects
