@@ -14,6 +14,7 @@ Anyone is welcome to contribute
 Anything denoted by SUBPROJECT is a repository of files, which probably will not work on it's own, but is to be used in a larger application, so far we have the following:
 
 ### Interaction
+* [input snapshot](https://github.com/opengl-toolbox/input_snapshot)
 * [window](https://github.com/opengl-toolbox/window)
 * [mouse](https://github.com/opengl-toolbox/mouse)
 * [camera](https://github.com/opengl-toolbox/camera)
