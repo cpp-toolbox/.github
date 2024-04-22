@@ -36,6 +36,7 @@ Anything denoted by SUBPROJECT is a repository of files, which probably will not
 * [math](https://github.com/opengl-toolbox/math)
 * [game loop](https://github.com/opengl-toolbox/game_loop)
 * [organizational tools](https://github.com/opengl-toolbox/organizational_tools)
+* [stopwatch](https://github.com/opengl-toolbox/stopwatch)
 
 # Minimal Working Examples
 Along with these SUBPROJECTS we also have some minimally working examples that use the subprojects:
