@@ -58,7 +58,7 @@ Use this as a `readme.md` template to let people know what external libraries th
 
 ...
 
-# Depdendencies
+# Dependencies
 
 ...
 
