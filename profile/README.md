@@ -47,6 +47,7 @@ Along with these SUBPROJECTS we also have some minimally working examples that u
 * [mwe physics world with character](https://github.com/opengl-toolbox/mwe_physics_world_with_character) - demonstrates a 3d world with a character that can be controlled with mouse and keyboard (Jolt Physics)
 * [mwe sound world with character](https://github.com/opengl-toolbox/mwe_sound_world_with_character) - demonstrates a 3d world with positional sound with a character which can be controleld with mouse and keyboard (openal)
 * [mwe networking](https://github.com/opengl-toolbox/mwe_networking) - basic network setup with enet
+* [mwe networked physics world with character](https://github.com/opengl-toolbox/mwe_networked_physics_world_with_character)- demonstrates a multi-threaded client-server network model using enet, supports connections and renders other players on the map
 
 
 # Creating New Subprojects
