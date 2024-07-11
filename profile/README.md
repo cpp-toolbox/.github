@@ -1,4 +1,4 @@
-# opengl-toolbox
+# cpp-toolbox
 
 The purpose of this organization is as follows:
 
