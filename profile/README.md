@@ -63,29 +63,5 @@ Along with these SUBPROJECTS we also have some minimally working examples that u
 
 
 # Creating New Subprojects
-Use this as a `readme.md` template to let people know what external libraries the subproject depeds on and how to set up the cmake file: 
-
-````
-
-# Info
-
-...
-
-# Dependencies
-
-...
-
-# CMake
-
-```
-...
-
-include_directories(TODO_FILL_IN)
-add_subdirectory(TODO_FILL_IN)
-
-... 
-
-target_link_libraries(your_project_name ... TODO_FILL_IN)
-```
-````
+Use this as a `readme.md` template to let people know what external libraries the subproject depends as a bullet list of links to conan packages which can be found at the [conan center](https://conan.io/center/recipes)
 
