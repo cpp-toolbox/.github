@@ -10,7 +10,14 @@ The purpose of this organization is as follows:
 Anyone is welcome to contribute
 
 # Projects
-All projects use submodules to facilitate the integration of subprojects. Whenever you clone a main project be sure to `git submodule update --init --recursive` to get all subprojects. As for managing external libraries we use `conan` install it on your system, and once you have all the files for a project run `conan install .` in the root of the project, then `cmake --preset conan-release` and finally `cmake --build --preset conan-release` (make sure you have a new version of cmake for this).
+All projects use submodules to facilitate the integration of subprojects. Whenever you clone a main project be sure to `git submodule update --init --recursive` to get all subprojects. As for managing external libraries we use `conan` install it on your system, and once you have all the files for a project run `conan install .` in the root of the project, then `cmake --preset conan-release` and finally `cmake --build --preset conan-release` (make sure you have a new version of cmake for this). All in one: 
+
+```
+git submodule update --init --recursive
+conan install .
+cmake --preset conan-release
+cmake --build --preset conan-release
+```
 
 # Sub Projects
 Anything denoted by SUBPROJECT is a repository of files, which probably will not work on it's own, but is to be used in a larger application, so far we have the following:
