@@ -2,13 +2,15 @@
 
 The purpose of this organization is as follows:
 
-* To store a collection of repositories which use eachother to build up a nice abstraction layer over opengl.
-* To stop writing the same code, and doing it in a slightly different way each time, but rather improve the quality of existing code.
-* Since writing C++ code is relatively lower level when compared to game engines, it's important to modularize to reduce cognitive load.
-* To store minimal working examples of opengl code
+* To store a collection of repositories which use eachother to build up more complex programs. This is so that we stop writing same code, and doing it in a slightly different way each time, but rather improve the quality of existing code.
+* Since writing C++ code is relatively lower level when compared to other modern languages it's important to modularize in this way to reduce cognitive load.
 * Most of the content will be taloired for game development so there will be examples of sound, physics, etc...
+* Make sure all code runs on windows, mac and linux, with an emphasis on linux first as anyone can install linux, but not everyone can afford windows or mac.
 
 Anyone is welcome to contribute
+
+# Projects
+All projects use submodules to facilitate the integration of subprojects. Whenever you clone a main project be sure to `git submodule update --init --recursive` to get all subprojects. As for managing external libraries we use `conan` install it on your system, and once you have all the files for a project run `conan install .` in the root of the project, then `cmake --preset conan-release` and finally `cmake --build --preset conan-release` (make sure you have a new version of cmake for this).
 
 # Sub Projects
 Anything denoted by SUBPROJECT is a repository of files, which probably will not work on it's own, but is to be used in a larger application, so far we have the following:
