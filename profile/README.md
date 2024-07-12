@@ -17,7 +17,10 @@ git submodule update --init --recursive
 conan install .
 cmake --preset conan-release
 cmake --build --preset conan-release
+cd build/Release
 ```
+
+From there run the executable, note that if you try running the executable from anywhere else it will probably fail because it depends on paths of resources being relative to this folder, which may be fixed in the future.
 
 # Sub Projects
 Anything denoted by SUBPROJECT is a repository of files, which probably will not work on it's own, but is to be used in a larger application, so far we have the following:
