@@ -13,14 +13,26 @@ Anyone is welcome to contribute
 All projects use submodules to facilitate the integration of subprojects. Whenever you clone a main project be sure to `git submodule update --init --recursive` to get all subprojects. As for managing external libraries we use `conan` install it on your system, and once you have all the files for a project run `conan install .` in the root of the project, then `cmake --preset conan-release` and finally `cmake --build --preset conan-release` (make sure you have a new version of cmake for this). All in one: 
 
 ```
+cd project
 git submodule update --init --recursive
+
+cd sbpt
+python sbpt initialize ../src
+
 conan install .
+
 cmake --preset conan-release
 cmake --build --preset conan-release
 cd build/Release
 ```
 
-From there run the executable, note that if you try running the executable from anywhere else it will probably fail because it depends on paths of resources being relative to this folder, which may be fixed in the future.
+From there run the executable, note that if you try running the executable from anywhere else it will probably fail because it depends on paths of resources being relative to this folder, which may be fixed in the future. 
+
+If you are looking to develop existing code, note that we use a `clang-format` for this, to populate the project with the correct settings, go to the root of the project and do:
+```
+cd clang_formatting
+./create_symlinks.sh
+```
 
 # Sub Projects
 Anything denoted by SUBPROJECT is a repository of files, which probably will not work on it's own, but is to be used in a larger application, so far we have the following:
@@ -61,6 +73,9 @@ Along with these SUBPROJECTS we also have some minimally working examples that u
 * [mwe networking](https://github.com/opengl-toolbox/mwe_networking) - basic network setup with enet
 * [mwe networked physics world with character](https://github.com/opengl-toolbox/mwe_networked_physics_world_with_character)- demonstrates a multi-threaded client-server network model using enet, supports connections and renders other players on the map
 
+# sbpt
+
+When subprojects use other subprojects you usually have to hard-code includes to those locations which differ based on file structure, therefore [`sbpt`](https://github.com/cpp-toolbox/sbpt) was created to fix this issue.
 
 # Creating New Subprojects
 Use this as a `readme.md` template to let people know what external libraries the subproject depends as a bullet list of links to conan packages which can be found at the [conan center](https://conan.io/center/recipes)
