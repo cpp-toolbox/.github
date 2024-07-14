@@ -34,7 +34,7 @@ cd build/Release
 
 From there run the executable, note that if you try running the executable from anywhere else it will probably fail because it depends on paths of resources being relative to this folder, which may be fixed in the future. 
 
-If you are looking to develop existing code, note that we use a `clang-format` for this, to populate the project with the correct settings, go to the root of the project and do:
+If you are looking to develop existing code, note that we use a consistent style guide to keep things organized, we use `clang-format` for this, to populate the project with the correct settings, go to the root of the project and do:
 ```
 cd clang_formatting
 ./create_symlinks.sh
