@@ -10,20 +10,26 @@ The purpose of this organization is as follows:
 Anyone is welcome to contribute
 
 # Projects
-All projects use submodules to facilitate the integration of subprojects. Whenever you clone a main project be sure to `git submodule update --init --recursive` to get all subprojects. As for managing external libraries we use `conan` install it on your system, and once you have all the files for a project run `conan install .` in the root of the project, then `cmake --preset conan-release` and finally `cmake --build --preset conan-release` (make sure you have a new version of cmake for this). All in one: 
+All projects use submodules to facilitate the integration of subprojects, subprojects need to be setup to link to eachother using `sbpt`, for managing external libraries we use `conan` so install it on your system and follow their docs for preliminary setup on how to generate a profile before you run any conan commands.
 
 ```
+# get all subproject content
 cd project
 git submodule update --init --recursive
 
+# generate dynamic includes to linked subprojects
 cd sbpt
 python sbpt initialize ../src
 
+# install required packages
 conan install .
 
+# generate build system and then build
 cmake --preset conan-release
 cmake --build --preset conan-release
+
 cd build/Release
+# now run the executable
 ```
 
 From there run the executable, note that if you try running the executable from anywhere else it will probably fail because it depends on paths of resources being relative to this folder, which may be fixed in the future. 
