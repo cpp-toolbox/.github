@@ -22,7 +22,7 @@ cd sbpt
 python sbpt initialize ../src
 
 # install required packages
-conan install .
+conan install . --build=missing
 
 # generate build system and then build
 cmake --preset conan-release
