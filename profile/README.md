@@ -12,14 +12,15 @@ Anyone is welcome to contribute
 # Projects
 All projects use submodules to facilitate the integration of subprojects, subprojects need to be setup to link to eachother using `sbpt`, for managing external libraries we use `conan` so install it on your system and follow their docs for preliminary setup on how to generate a profile before you run any conan commands.
 
+First `cd` into the root of the project, then: 
+
 ```
 # get all subproject content
-cd project
 git submodule update --init --recursive
 
 # generate dynamic includes to linked subprojects
 cd sbpt
-python sbpt initialize ../src
+python sbpt.py initialize ../src
 
 # install required packages
 conan install . --build=missing
