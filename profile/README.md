@@ -21,6 +21,7 @@ git submodule update --init --recursive
 # generate dynamic includes to linked subprojects
 cd sbpt
 python sbpt.py initialize ../src
+cd ..
 
 # install required packages
 conan install . --build=missing
