@@ -43,32 +43,8 @@ cd clang_formatting
 ```
 
 # Sub Projects
-Anything denoted by SUBPROJECT is a repository of files, which probably will not work on it's own, but is to be used in a larger application, so far we have the following:
+Anything denoted by SUBPROJECT is a repository of files, which probably will not work on it's own, but is to be used in a larger application, there are 50+ repositories here so listing them out would be too long, instead read about how to interact with them in the tools section
 
-### Interaction
-* [input snapshot](https://github.com/opengl-toolbox/input_snapshot)
-* [window](https://github.com/opengl-toolbox/window)
-* [mouse](https://github.com/opengl-toolbox/mouse)
-* [camera](https://github.com/opengl-toolbox/camera)
-* [physics](https://github.com/opengl-toolbox/physics)
-
-### Graphics
-* [glad3.3](https://github.com/opengl-toolbox/glad_opengl_3.3_core)
-* [render primitives](https://github.com/opengl-toolbox/render_primitives)
-* [shaders](https://github.com/opengl-toolbox/shaders)
-* [shader pipeline](https://github.com/opengl-toolbox/shader_pipeline)
-* [model loading](https://github.com/opengl-toolbox/model_loading)
-* [font rendering](https://github.com/opengl-toolbox/font_rendering)
-
-### Sound
-* [sound system](https://github.com/opengl-toolbox/sound_system)
-
-
-### Misc.
-* [math](https://github.com/opengl-toolbox/math)
-* [game loop](https://github.com/opengl-toolbox/game_loop)
-* [organizational tools](https://github.com/opengl-toolbox/organizational_tools)
-* [stopwatch](https://github.com/opengl-toolbox/stopwatch)
 
 # Minimal Working Examples
 Along with these SUBPROJECTS we also have some minimally working examples that use the subprojects:
@@ -81,10 +57,17 @@ Along with these SUBPROJECTS we also have some minimally working examples that u
 * [mwe networking](https://github.com/opengl-toolbox/mwe_networking) - basic network setup with enet
 * [mwe networked physics world with character](https://github.com/opengl-toolbox/mwe_networked_physics_world_with_character)- demonstrates a multi-threaded client-server network model using enet, supports connections and renders other players on the map
 
-# sbpt
+# tools
 
-When subprojects use other subprojects you usually have to hard-code includes to those locations which differ based on file structure, therefore [`sbpt`](https://github.com/cpp-toolbox/sbpt) was created to fix this issue.
+## [`sbpt`](https://github.com/cpp-toolbox/sbpt)
+When subprojects use other subprojects you usually have to hard-code includes to those locations which differ based on file structure, therefore this script was created to fix this issue.
 
-# Creating New Subprojects
-Use this as a `readme.md` template to let people know what external libraries the subproject depends as a bullet list of links to conan packages which can be found at the [conan center](https://conan.io/center/recipes)
+## [`cpp_project_bootstrapper`](https://github.com/cpp-toolbox/cpp_project_bootstrapper)
+Making new cpp projects can become tiresome, setting up the required files takes time away from coding, but in our context we have to be able to make a lot of different projects for testing purposes and the creation of mwe's therefore this script helps manage that process to be much faster than usual
+
+## [`process_changes_in_submodules`](https://github.com/cpp-toolbox/process_changes_in_submodules)
+When you're working in projects mainly composed of submodules, then when you make various changes around the project you'll notice it takes a longer time to commit those changes because you have to visit each submodule seperately and give it their own commit, while this is fine, the moving around part and figuring out where you need to go part is tiresome, this script fixes that.
+
+## [`cpp_tbx_submodule_adder`](https://github.com/cpp-toolbox/cpp_tbx_submodule_adder)
+When you're building up new projects you'll find that adding submodules can be cumbersome, in order to know what submodules you have you have to look at the web interface go to the project, copy the clone url and so on, this script solves this by providing a command line interface to list and select submodules automatically.
 
