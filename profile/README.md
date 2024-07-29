@@ -1,11 +1,12 @@
 # cpp-toolbox
 
-The purpose of this organization is as follows:
+A collection of repositories which use eachother to build up more complex programs. 
 
-* To store a collection of repositories which use eachother to build up more complex programs. This is so that we stop writing same code, and doing it in a slightly different way each time, but rather improve the quality of existing code.
-* Since writing C++ code is relatively lower level when compared to other modern languages it's important to modularize in this way to reduce cognitive load.
-* Most of the content will be taloired for game development so there will be examples of sound, physics, etc...
-* Make sure all code runs on windows, mac and linux, with an emphasis on linux first as anyone can install linux, but not everyone can afford windows or mac.
+The goal is to stop writing same code, and doing it in a slightly different way each time, but rather improve the quality of existing code.
+
+Most of the content will be taloired for game development so there will be examples of sound, physics, etc...
+
+The code should run on on windows, mac and linux, with an emphasis on linux first as anyone with a computer can get linux, but not everyone can afford windows or mac.
 
 Anyone is welcome to contribute
 
