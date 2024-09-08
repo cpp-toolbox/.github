@@ -10,6 +10,8 @@ The code should run on on windows, mac and linux, with an emphasis on linux firs
 
 Anyone is welcome to contribute
 
+**NOTE: Before you do anything else, [read this article](https://toolbox.cuppajoeman.com/tool_howtos/git/projects_as_composition_of_submodules.html) to understand why the structure is the way that it is**
+
 # Projects
 The projects in this repo should do one thing well, and only do that, try not to have multiple goals when creating new projects in this organization.
 
