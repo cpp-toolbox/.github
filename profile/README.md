@@ -52,6 +52,7 @@ Along with these SUBPROJECTS we also have some minimally working examples that u
 * [mwe glfw](https://github.com/opengl-toolbox/mwe_glfw) - glfw window using opengl
 * [mwe shader pipeline](https://github.com/opengl-toolbox/mwe_shader_pipeline) - exmaple usage on how to use the shader pipeline
 * [mwe model loading](https://github.com/opengl-toolbox/mwe_model_loading) - model loading with noclip 3d character controller
+* [mwe model loading](https://github.com/cpp-toolbox/mwe_model_loading_lighting) - same as above with lighting
 * [mwe font rendering](https://github.com/opengl-toolbox/mwe_font_rendering) - demonstrates font rendering with freetype fonts
 * [mwe physics world with character](https://github.com/opengl-toolbox/mwe_physics_world_with_character) - demonstrates a 3d world with a character that can be controlled with mouse and keyboard (Jolt Physics)
 * [mwe sound world with character](https://github.com/opengl-toolbox/mwe_sound_world_with_character) - demonstrates a 3d world with positional sound with a character which can be controleld with mouse and keyboard (openal)
