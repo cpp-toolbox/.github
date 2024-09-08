@@ -11,6 +11,8 @@ The code should run on on windows, mac and linux, with an emphasis on linux firs
 Anyone is welcome to contribute
 
 # Projects
+The projects in this repo should do one thing well, and only do that, try not to have multiple goals when creating new projects in this organization.
+
 All projects use submodules to facilitate the integration of subprojects, subprojects need to be setup to link to eachother using `sbpt`, for managing external libraries we use `conan` so install it on your system and follow their docs for preliminary setup on how to generate a profile before you run any conan commands.
 
 First `cd` into the root of the project, then: 
