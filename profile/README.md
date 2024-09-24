@@ -66,8 +66,24 @@ Along with these SUBPROJECTS we also have some minimally working examples that u
 
 # tools
 
+## [`build_notifier`](https://github.com/cpp-toolbox/build_notifier)
+Every project here uses conan for package management, due to that you usually have to run the command `cmake --build --preset conan-release` a bunch, which is tiresome, and while you can go back in your terminals history I wanted a more robust way to deal with this, as a cherry on top when compilation finishes there is a success or fail sound so you can stop staring at the build process and continue working in the mean time.
+
 ## [`sbpt`](https://github.com/cpp-toolbox/sbpt)
 When subprojects use other subprojects you usually have to hard-code includes to those locations which differ based on file structure, therefore this script was created to fix this issue.
+
+## [`cpp_file_generator`](https://github.com/cpp-toolbox/cpp_file_generator)
+IDE's have a lot of features, but language servers are catching up, one feature that's nice that a language server doesn't have right now is simply creating new `.cpp`/`.hpp` pairs for a new class or file you want to make, this generator does so.
+
+## [`editor_configurations`](https://github.com/cpp-toolbox/editor_configurations/)
+When working with a cpp-toolbox project there are usually four main things you want to do
+1. build the program
+2. run the program
+3. debug the program
+4. use git
+   
+the editor configurtion repository tries to facilitate those needs in a simple manner for whatever editor that the developers currently use. Since I use neovim then I have those configurations there to start neovim with these terminals opened (in buffers) run `python scripts/editor_configurations/launch_nvim.py` or from a running instance of nvim `:source scripts/editor_configurations/cpp_terminal_autostart.vim`.
+
 
 ## [`cpp_project_bootstrapper`](https://github.com/cpp-toolbox/cpp_project_bootstrapper)
 Making new cpp projects can become tiresome, setting up the required files takes time away from coding, but in our context we have to be able to make a lot of different projects for testing purposes and the creation of mwe's therefore this script helps manage that process to be much faster than usual
