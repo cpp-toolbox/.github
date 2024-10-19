@@ -55,6 +55,7 @@ Anything denoted by SUBPROJECT is a repository of files, which probably will not
 Along with these SUBPROJECTS we also have some minimally working examples that use the subprojects:
 * [mwe glfw](https://github.com/opengl-toolbox/mwe_glfw) - glfw window using opengl
 * [mwe shader cache](https://github.com/cpp-toolbox/mwe_shader_cache) - a wrapper around working with shaders, greatly simplifies interaction with opengl and shaders
+* [mwe texture atlas](https://github.com/cpp-toolbox/mwe_texture_atlas) - a system for working with texture atlases through a simple json format
 * [mwe vertex geometry](https://github.com/cpp-toolbox/mwe_vertex_geometry) - a minimal place to view 3d geometry, uses a noclip fps camera
 * [mwe model loading](https://github.com/opengl-toolbox/mwe_model_loading) - model loading with noclip 3d character controller
 * [mwe model loading lighting](https://github.com/cpp-toolbox/mwe_model_loading_lighting) - same as above with lighting
