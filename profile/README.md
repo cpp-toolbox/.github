@@ -8,7 +8,7 @@ Most of the content will be taloired for game development so there will be examp
 
 The code should run on on windows, mac and linux, with an emphasis on linux first as anyone with a computer can get linux, but not everyone can afford windows or mac.
 
-Anyone is welcome to contribute
+Anyone is welcome to contribute, but it's best to join [the discord server](https://discord.gg/8yTdwdYSaQ) first to chat about what changes you are looking to make, also feel free to join if you're having trouble with anything.
 
 **NOTE: Before you do anything else, [read this article](https://toolbox.cuppajoeman.com/tool_howtos/git/projects_as_composition_of_submodules.html) to understand why the structure is the way that it is**
 
